@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Stage 1.3') {
           steps {
-            sh 'exit 1'
+            build 'test-job-01'
           }
         }
       }
