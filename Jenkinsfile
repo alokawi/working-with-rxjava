@@ -29,7 +29,12 @@ pipeline {
     }
     stage('Stage 3') {
       steps {
-        build 'test-job-01'
+        build(job: 'test-job-01', propagate: true)
+      }
+    }
+    stage('Stage 4') {
+      steps {
+        sleep 4
       }
     }
   }
