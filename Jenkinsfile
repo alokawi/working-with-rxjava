@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'echo "Hello Step1"'
         sh 'which java'
+        sleep 5
       }
     }
     stage('Stage 2') {
