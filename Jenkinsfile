@@ -27,5 +27,10 @@ pipeline {
         echo 'Step 2'
       }
     }
+    stage('Stage 3') {
+      steps {
+        build 'test-job-01'
+      }
+    }
   }
 }
